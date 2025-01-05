@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        for(int j=0;j<t;j++){
+            long n=sc.nextLong();
+            long i=5,count=0;
+            while(n/i>0){
+                count+=n/i;
+                i=i*5;
+            }
+            System.out.println(count);
+        }
+
+    }
+}
